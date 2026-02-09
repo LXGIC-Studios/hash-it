@@ -1,0 +1,48 @@
+{
+  "name": "@lxgicstudios/hash-it",
+  "version": "1.0.0",
+  "description": "Hash passwords with bcrypt, generate file checksums (SHA-256, SHA-512, MD5), and verify hashes. Fast CLI hashing tool powered by Node crypto.",
+  "main": "dist/index.js",
+  "bin": {
+    "hash-it": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "hash",
+    "bcrypt",
+    "checksum",
+    "sha256",
+    "sha512",
+    "md5",
+    "password",
+    "crypto",
+    "file-hash",
+    "verify",
+    "cli",
+    "devtools",
+    "security"
+  ],
+  "author": "LXGIC Studios",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lxgicstudios/hash-it"
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/node": "^25.2.2",
+    "typescript": "^5.9.3"
+  }
+}
